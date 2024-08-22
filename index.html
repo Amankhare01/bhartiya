@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider with Navigation Arrows and Dots</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+<div class="a1">
+    <div class="video-slider-container">
+        <div class="video-slider">
+            <video id="video1" class="video" width="640" height="360">
+                <source src="video (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video2" class="video" width="640" height="360">
+                <source src="video (2).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video3" class="video" width="640" height="360">
+                <source src="video (3).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <a class="arrow left-arrow" id="leftArrow">&#10094;</a>
+            <a class="arrow right-arrow" id="rightArrow">&#10095;</a>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+    <div class="b1">
+        <a href="https://www.google.com/"><span style='font-size:100px;'>&#8594;</span></a>
+        <a href="https://www.facebook.com/"><span style='font-size:100px;'>&#8594;</span></a>
+        <a href="https://www.x.com/"><span style='font-size:100px;'>&#8594;</span></a>
+    </div>
+</div>
+    <script src="menu.js"></script>
+</body>
+</html>
